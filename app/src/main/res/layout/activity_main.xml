@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F5FC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- CABEÇALHO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="#7955B5"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lembraê 💜"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sua rotina organizada, sem esquecer o que importa."
+                android:textColor="#F1E9FF"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pequenas tarefas, grandes conquistas! ✨"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+        <!-- SAUDAÇÃO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olá! Vamos organizar seu dia?"
+            android:textColor="#333333"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Planeje suas atividades e acompanhe sua evolução."
+            android:textColor="#777777"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- CARD NOVA ATIVIDADE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📝 Nova atividade"
+                android:textColor="#7955B5"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O que você precisa fazer?"
+                android:textColor="#444444"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtTask"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Digite sua atividade"
+                android:inputType="textCapSentences"
+                android:padding="12dp"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="#9273C6" />
+
+            <!-- DATA -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅 Data da atividade"
+                android:textColor="#444444"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="15dp" />
+
+            <Button
+                android:id="@+id/btnChooseDate"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Escolher data"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#9273C6"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/txtSelectedDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nenhuma data selecionada"
+                android:textColor="#7955B5"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="10dp" />
+
+            <!-- HORÁRIO -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🕒 Horário da atividade"
+                android:textColor="#444444"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnChooseTime"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Escolher horário"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#9273C6"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/txtSelectedTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nenhum horário selecionado"
+                android:textColor="#7955B5"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="10dp" />
+
+            <!-- ADICIONAR -->
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="＋ Adicionar atividade"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#7955B5"
+                android:layout_marginTop="12dp" />
+
+        </LinearLayout>
+
+        <!-- MENSAGEM MOTIVACIONAL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#EEE7FA"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💜 Um passo de cada vez!"
+                android:textColor="#7955B5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tudo bem mudar os planos. Organize sua rotina no seu tempo."
+                android:textColor="#666666"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <!-- CALENDÁRIO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            android:layout_marginTop="22dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅 Meu calendário"
+                android:textColor="#7955B5"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <!-- NAVEGAÇÃO DOS MESES -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="15dp">
+
+                <Button
+                    android:id="@+id/btnPreviousMonth"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="‹"
+                    android:textSize="24sp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#7955B5" />
+
+                <TextView
+                    android:id="@+id/txtCalendarMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Novembro 2026"
+                    android:textColor="#7955B5"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnNextMonth"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="›"
+                    android:textSize="24sp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#7955B5" />
+            </LinearLayout>
+
+            <!-- DIAS DA SEMANA -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="7"
+                android:layout_marginTop="15dp">
+
+                <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="D" android:textStyle="bold" android:textColor="#7955B5"/>
+                <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="S" android:textStyle="bold" android:textColor="#7955B5"/>
+                <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="T" android:textStyle="bold" android:textColor="#7955B5"/>
+                <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="Q" android:textStyle="bold" android:textColor="#7955B5"/>
+                <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="Q" android:textStyle="bold" android:textColor="#7955B5"/>
+                <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="S" android:textStyle="bold" android:textColor="#7955B5"/>
+                <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="S" android:textStyle="bold" android:textColor="#7955B5"/>
+
+            </GridLayout>
+
+            <!-- DIAS DO MÊS GERADOS PELO JAVA -->
+            <GridLayout
+                android:id="@+id/gridCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="7"
+                android:layout_marginTop="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEE7FA"
+                android:layout_marginTop="15dp" />
+
+            <!-- ATIVIDADES DA DATA SELECIONADA -->
+            <TextView
+                android:id="@+id/txtCalendarSelected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atividades do dia"
+                android:textColor="#7955B5"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutCalendarTasks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <!-- MINHA ROTINA -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📋 Minha rotina"
+            android:textColor="#333333"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- LISTA DE ATIVIDADES -->
+        <LinearLayout
+            android:id="@+id/layoutTasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <!-- RODAPÉ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lembraê 💜 | Organize sua rotina"
+            android:textAlignment="center"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
